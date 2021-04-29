@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace PizzaBox.Storing.Repositories
+namespace PizzaBox.Domain.Abstracts
 {
   public interface IRepository<T>
   {

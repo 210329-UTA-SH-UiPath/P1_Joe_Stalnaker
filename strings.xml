@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <string> <!--0-->
+  Welcome To PizzaBox!
+  1. List Stores
+  2. Show Total Sales by Store (weekly or monthly)
+  3. List Previous Orders by Store
+  4. List Previous Orders by Customer
+  5. List Pizzas in Order
+  6. Start New Order
+  7. Add New Customer
+  8. Quit</string>
+  <string><!--1-->
+  0. Return to Main Menu</string>
+  <string><!--2-->
+  Enter Customer Name: </string>
+  <string><!--3-->
+  Select From List: </string>
+  <string><!--4-->
+  1. Weekly 
+  2. Monthly</string>
+  <string><!--5-->
+  Number of weeks or months previous: </string>
+</ArrayOfString>

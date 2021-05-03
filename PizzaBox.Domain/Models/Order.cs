@@ -5,16 +5,10 @@ using System;
 
 namespace PizzaBox.Domain.Models
 {
-  /// <summary>
-  /// 
-  /// </summary>
-  [XmlInclude(typeof(Customer))]
-  [XmlInclude(typeof(APizza))]
-  [XmlInclude(typeof(AStore))]
-  [XmlInclude(typeof(MeatPizza))]
-  [XmlInclude(typeof(HawiianPizza))]
+  /// <summary></summary>
   public class Order
   {
+    public int ID { get; set; }
     public AStore Store { get; set; }
     public Customer Customer { get; set; }
     public List<APizza> Pizzas { get; set; }

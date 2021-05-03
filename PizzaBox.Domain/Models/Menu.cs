@@ -12,7 +12,6 @@ namespace PizzaBox.Domain.Models
      public string Name { get; set; }
      [Required]
      public string Text { get; set; }
-     [Required]
      public Menu() { }
 
         public Menu(int id, string name, string text)

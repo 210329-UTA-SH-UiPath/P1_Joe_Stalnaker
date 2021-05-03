@@ -32,12 +32,10 @@ namespace PizzaBox.Service
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<PizzaBoxDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("PizzaBoxDb"))
-            );
-            var foo = services.AddScoped<IRepository<AComponent>, ComponentRepository>();
+            services.AddDbContext<PizzaBoxDbContext>();
+            services.AddScoped<IRepository<AComponent>, ComponentRepository>();
             services.AddScoped<IRepository<Domain.Models.Customer>, CustomerRepository>();
-            services.AddScoped<IRepository<Domain.Models.Menu>, MenuRepository>();
+            //services.AddScoped<IRepository<Domain.Models.Menu>, MenuRepository>();
             services.AddScoped<IRepository<Domain.Models.Order>, OrderRepository>();
             services.AddScoped<IRepository<APizza>, PizzaRepository>();
             services.AddScoped<IRepository<AStore>, StoreRepository>();
